@@ -1,0 +1,270 @@
+@import url("https://fonts.cdnfonts.com/css/lt-anomaly");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "LT Anomaly", sans-serif;
+  background-color: #2c2c2c;
+}
+
+/* Seção Header */
+.header-title {
+  background-color: #5300c8;
+  width: 100%;
+  height: 8vw;
+  padding: 20px, 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 30%;
+  height: 5vw;
+
+  max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
+  display: block; /* Remove espaços indesejados abaixo da imagem */
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: center;
+  color: #fff;
+}
+
+p {
+  text-align: left;
+}
+
+/* Seção "Meus Produtos" */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+}
+
+.produtos-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  background: #1903c6;
+  color: #ffffff;
+  width: 196px;
+  height: 270px;
+  border-radius: 10px;
+  gap: 10px;
+  border: 2px solid #fff;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: -12px 9px 5px -4px rgba(142, 232, 252, 0.39);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #5300c8;
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.card p {
+  margin: 10px 10px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  border: 2px;
+  gap: 8px;
+  margin-bottom: 5px;
+  border: 2px solid #fff;
+}
+
+.meus-produtos h1,
+.produtos-container h1 {
+  font-size: 30px;
+}
+
+.meus-produtos {
+  align-items: center;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  width: 678px;
+  height: auto;
+  box-shadow: -5px 5px 15px rgba(142, 232, 252, 0.39);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px 0px;
+  padding: 20px;
+  overflow: auto;
+  gap: 25px;
+  padding-top: 40px;
+  box-shadow: -12px 9px 5px -4px rgba(142, 232, 252, 0.39);
+}
+
+.produtos img {
+  align-items: center;
+  width: 176px;
+  height: 174px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-container--value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.card-container--value img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lixo {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.lixo:hover,
+.editar:hover {
+  background-color: #e50b36;
+  color: #ffffff;
+}
+
+/* Seção "Adicionar Produtos" */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.button-group {
+  flex: 0; /* Não cresce, mantém o tamanho mínimo */
+}
+
+input {
+  color: #03318c;
+  border-radius: 40px;
+  width: 400px;
+  height: 70px;
+  border: 2px solid #03318c;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+button {
+  color: #03318c;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  width: 196px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #03318c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input-group ::placeholder,
+.button-group ::placeholder,
+input {
+  justify-content: center;
+  color: #03318c;
+}
+
+.adicionar-produtos {
+  padding-left: 50px;
+}
+
+.guardar {
+  background-color: #03318c;
+  color: #fff;
+  border: 2px solid #03318c;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+}
+
+.guardar:hover {
+  background-color: #ffffff;
+  color: #1903c6;
+  border: 2px solid #1903c6;
+}
+
+.limpar {
+  align-items: center;
+  background-color: #ffffff;
+  color: #1903c6;
+  border: 2px solid #03318c;
+  cursor: pointer;
+  text-align: center;
+}
+
+#form-produto {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+#form-produto button {
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Footer */
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  background: #1903c6;
+  color: #fff;
+
+  width: auto;
+  padding: 45px;
+}
+
+footer p,
+a {
+  color: #fff;
+  text-align: center;
+  line-height: 2;
+  text-decoration: none;
+}
