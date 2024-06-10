@@ -4,7 +4,11 @@
 
 ## 🚀 Layout do Figma
 
-Veja aqui o layout do desafio [Neste Link](https://www.figma.com/design/1zm3NNIw4KcI0RQtR6UmqK/New-AluraGeek---PT?node-id=0-1&t=SoKGZYCefV333poR-0)
+Veja aqui o layout do desafio [Neste Link](https://www.figma.com/design/1zm3NNIw4KcI0RQtR6UmqK/New-AluraGeek---PT?node-id=0-1&t=SoKGZYCefV333poR-0) 
+
+## 🔗 Link do deploy 
+
+Veja o projeto no ar na Vercel [Neste Link](https://alura-geek-blue.vercel.app/)
 
 ## 🚀 Tecnologias Utilizadas
 
